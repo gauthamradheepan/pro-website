@@ -456,6 +456,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+.project-cards-container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Create responsive columns */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center the grid */
+}
+.project-card {
+  max-width: 300px; /* Optional: set a max width */
+  box-sizing: border-box; /* Ensure padding doesn't add to card width */
+}
+
 /* Contact*/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
