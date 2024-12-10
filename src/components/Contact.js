@@ -40,44 +40,46 @@ export const Contact =() => {
        
     };
     return(
-        <Container>
-            <Row classname="align-items-center">
-                <Col md={6}>
-                    <img src={contactImg} alt="Contact us"/>
-                </Col>
-                <Col md={6}>
-                    <h2> Get In Touch</h2>
-                    <form onSumbit = {handleSubmit}>
-                        <Row>
-                            <Col sm={6} className="px-1">
-                                <input type = "text" value={formDetails.firstName} placeholder="First Name" onChange = {(e) => onFormUpdate ('firstName', e.target.value)} />
-                            </Col>
-                            <Col sm={6} className="px-1">
-                                <input type = "text" value={formDetails.lastName} placeholder="last Name" onChange = {(e) => onFormUpdate ('lastName', e.target.value)} />
-                            </Col>
-                            <Col sm={6} className="px-1">
-                                <input type = "email" value={formDetails.email} placeholder="Email Address" onChange = {(e) => onFormUpdate ('email', e.target.value)} />
-                            </Col>
-                            <Col sm={6} className="px-1">
-                                <input type = "tel" value={formDetails.phone} placeholder="Phone Number" onChange = {(e) => onFormUpdate ('phone', e.target.value)} />
-                            </Col>
-                            <Col>
-                                <textarea row="6" value={formDetails.message} placeHolder="Message" onChange = {(e) => onFormUpdate ('message', e.target.value)} />
-                                <button type="submit"> <span>{buttonText}</span></button>
-                            </Col>
-                            <Col>
-                            {
-                                status.message &&
-                                <Col>
-                                    <p className={status.success ===false ? "danger" : "success"}></p>
+        <section className="contact" id="contact">
+            <Container>
+                <Row classname="align-items-center">
+                    <Col md={6}>
+                        <img src={contactImg} alt="Contact us"/>
+                    </Col>
+                    <Col md={6}>
+                        <h2> Get In Touch</h2>
+                        <form onSumbit = {handleSubmit}>
+                            <Row>
+                                <Col sm={6} className="px-1">
+                                    <input type = "text" value={formDetails.firstName} placeholder="First Name" onChange = {(e) => onFormUpdate ('firstName', e.target.value)} />
                                 </Col>
-                            }
-                            </Col>
-                            
-                        </Row>
-                    </form>
-                </Col>
-            </Row>
-        </Container>
+                                <Col sm={6} className="px-1">
+                                    <input type = "text" value={formDetails.lastName} placeholder="last Name" onChange = {(e) => onFormUpdate ('lastName', e.target.value)} />
+                                </Col>
+                                <Col sm={6} className="px-1">
+                                    <input type = "email" value={formDetails.email} placeholder="Email Address" onChange = {(e) => onFormUpdate ('email', e.target.value)} />
+                                </Col>
+                                <Col sm={6} className="px-1">
+                                    <input type = "tel" value={formDetails.phone} placeholder="Phone Number" onChange = {(e) => onFormUpdate ('phone', e.target.value)} />
+                                </Col>
+                                <Col>
+                                    <textarea row="6" value={formDetails.message} placeHolder="Message" onChange = {(e) => onFormUpdate ('message', e.target.value)} />
+                                    <button type="submit"> <span>{buttonText}</span></button>
+                                </Col>
+                                <Col>
+                                {
+                                    status.message &&
+                                    <Col>
+                                        <p className={status.success ===false ? "danger" : "success"}></p>
+                                    </Col>
+                                }
+                                </Col>
+                                
+                            </Row>
+                        </form>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
     )
 }

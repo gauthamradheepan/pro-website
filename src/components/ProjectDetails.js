@@ -14,7 +14,7 @@ const ProjectDetails = () => {
   const project = projectData[projectId];
 
   return (
-    <div>
+    <div className="project-details-container">
       <h1>{project?.title}</h1>
       <p>{project?.description}</p>
     </div>

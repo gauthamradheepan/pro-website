@@ -3,8 +3,7 @@ import { Col, Row} from "react-bootstrap";
 import { Link } from "react-router-dom";
 export const ProjectCard = ({title,description, imgUrl, id}) => {
     return(
-        <Row>
-        <Link to={`/projects/${id}`}>
+         
             <Col sm={6} md={4}>
                 <div className="proj-imgbx">
                     <img src={imgUrl} />
@@ -15,7 +14,7 @@ export const ProjectCard = ({title,description, imgUrl, id}) => {
 
                 </div>
             </Col>
-        </Link>
-        </Row>
+        
+         
     )
 }
