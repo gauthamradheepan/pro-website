@@ -312,7 +312,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  margin-top: 40px;
 }
 .skill h2 {
 	font-size: 45px;
@@ -420,7 +420,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
 }
-.proj
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -432,7 +432,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx:hover::before {
   height: 100%;
+  color: pink;
+  
 }
+
 .proj-txtx {
   position: absolute;
   text-align: center;
@@ -442,16 +445,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
+  
+  color: white;
 }
+
 .proj-txtx h4 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  color: white;
 }
 .proj-txtx span {
   font-style: italic;
@@ -477,19 +485,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   max-width: 300px; /* Optional: set a max width */
   box-sizing: border-box; /* Ensure padding doesn't add to card width */
 }
+.project-card link{
+  text-decoration: firebrick;
+  color: black;
+  display: center;
+}
+.tab-content{
+  display: inline-block
+}
 /* ProjectDetails.css */
 .project-details-container {
-  padding: 20px;
-  margin-top: 100px; /* Push content below a fixed navbar if necessary */
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9; /* Light gray background */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #f0f8ff;
-  background-image: url ('../assets/img/banner-bg.png');
+  margin-top: 0;
+  padding: 700px 0 100px 0;
+  background-image: url('./assets/img/space.jpg');
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+.project-title-description{
+  position: relative; /* Position relative to the container */
+  top: -400px; /* Move it upwards */
+  transform: translateY(-50px); /* Additional raising */
+  padding-top: 0; /* Ensure no additional padding */
+  
 }
 
 .project-title {
@@ -506,6 +524,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #555;
 }
 
+/* Project Card*/
+.link {
+  text-decoration: none;
+}
+
+.animated-container {
+  background-color: #4caf50;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  transition: transform 1.0s ease;
+}
+
+.animated-container.clicked {
+  transform: scale(0.9);
+  background-color: #388e3c;
+  transition: transform 1.0s ease;
+}
 /* Certifications*/
 
 .certs {

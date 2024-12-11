@@ -14,10 +14,12 @@ const ProjectDetails = () => {
   const project = projectData[projectId];
 
   return (
-    <div className="project-details-container">
-      <h1>{project?.title}</h1>
-      <p>{project?.description}</p>
-    </div>
+    <section className= "project-details-container" id = "projectDescription">
+      <div className = "project-title-description">
+        <h1>{project?.title}</h1>
+        <p>{project?.description}</p>
+      </div>
+    </section>
   );
 };
 
