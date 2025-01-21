@@ -52,7 +52,7 @@ export const Banner = ()=> {
 
                     </span>
                     <h1>{`Hi I'm Gautham`}<span className="wrap" > {text}</span></h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                    <p>I am a passionate and driven individual with a background in Governance, Risk, and Compliance (GRC), cybersecurity, and web development. With a foundation in computer science and hands-on experience in network security, I have worked on projects demonstrating the vulnerabilities of WPA2 encryption using Kali Linux and a Raspberry Pi Zero. Additionally, I have developed a dynamic F1 website using React, Tailwind CSS, and Mapbox, where users can explore information about current F1 drivers, race history, and tracks. My expertise spans security protocols, risk management, and delivering user-focused solutions, with a strong focus on compliance and governance within the cybersecurity landscape.</p>
                     {/* <button onClick={() => console.log('connect')}> Lets Connect <ArrowRightCircle size={25}/></button> */}
                     </Col>
                     <Col xs = {12} md = {6} xl ={5}>

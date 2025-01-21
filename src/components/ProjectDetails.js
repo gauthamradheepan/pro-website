@@ -7,9 +7,9 @@ const ProjectDetails = () => {
   const navigate = useNavigate(); // Hook for navigation
 
   const projectData = {
-    1: { title: "Cyber Security Project", description: "Detailed description about project 1" },
-    2: { title: "F1 Front End Project", description: "Detailed description about project 2" },
-    3: { title: "Cyber Security Project 2", description: "Detailed description about project 3" },
+    1: { title: "WPA2 Encryption Vulnerabilities & Wireless Network Security:", description: "I worked on a project demonstrating the vulnerabilities of WPA2 encryption by conducting a dictionary attack on a WPA2-secured Wi-Fi network using Kali Linux on a Raspberry Pi Zero. The project highlighted the importance of strong, complex passwords in securing wireless networks and showed how weak passwords could be exploited. Through this hands-on experience, I gained practical knowledge of using wireless network penetration testing tools in Kali Linux on the Raspberry Pi to exploit network vulnerabilities and emphasize the need for enhanced security practices.", technologies: "Kali Linux, Raspberry Pi Zero, Wireless Hacking" },
+    2: { title: "F1 Front End Project", description: "I developed an F1 website using React, Tailwind CSS, and Mapbox, where users can explore current F1 drivers, F1 history, and race tracks. The website provides a dynamic and visually appealing user experience, leveraging React for a responsive interface, Tailwind CSS for styling, and Mapbox to display interactive maps of the tracks. This project allowed me to combine modern web technologies to create an engaging platform for F1 enthusiasts to easily access and explore valuable data about drivers, race history, and iconic tracks.", technologies: "React, Tailwind css, MapBox" },
+    
   };
 
   const project = projectData[projectId];
@@ -23,6 +23,7 @@ const ProjectDetails = () => {
       <div className="project-title-description">
         <h1>{project?.title}</h1>
         <p>{project?.description}</p>
+        <p>Technologies: {project?.technologies}</p>
       </div>
       <div className="project-media">
         {projectId === '1' && (

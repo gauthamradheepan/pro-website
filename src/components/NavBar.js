@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Link , useNavigate} from 'react-router-dom';
 import logo from '../assets/img/logo.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
+import navIcon3 from '../assets/img/nav-icon3.png'
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -40,7 +41,7 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
       <Container>
-        <Navbar.Brand href="home">
+        <Navbar.Brand href="#home">
           <img src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -73,8 +74,14 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/gautham-radheepan-140b6119b/">
+              <a href="https://www.linkedin.com/in/gautham-radheepan/">
                 <img src={navIcon1} alt="" rel="noopener noreferrer" target="_blank" />
+              </a>
+            </div>
+
+            <div className="social-icon">
+              <a href="https://github.com/gauthamradheepan/pro-website">
+                <img src={navIcon3} alt="" rel="noopener noreferrer" target="_blank" />
               </a>
             </div>
 

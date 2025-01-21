@@ -31,14 +31,14 @@ export const Skills = () =>{
     const skillsRef = useRef(null);
     
     return (
-        <section className ="skill" id="skill" href={skillsRef}>
+        <section className ="skill" id="skill" ref={skillsRef}>
             <Container>
                 <Row>
                     <Col>
                     
                         <div className="skill-bx">
                             <h2>Skills</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>I possess a diverse skill set in cybersecurity, web development, and Governance, Risk, and Compliance (GRC). In cybersecurity, I have experience in penetration testing, vulnerability assessments, and network security, with practical knowledge of tools such as Kali Linux and Raspberry Pi for ethical hacking. I also have proficiency in front-end web development, utilizing React, Tailwind CSS, and Mapbox to build interactive, user-friendly websites. My GRC background equips me with a solid understanding of risk management, compliance, and security frameworks. I am adept at leveraging modern technologies to develop secure, efficient, and user-focused solutions in both technical and regulatory environments.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider"> 
                                 <div className="item">
                                     <img src={meter1} />
