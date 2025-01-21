@@ -21,9 +21,17 @@
 }
 html{
   scroll-behavior: smooth;
-  scroll-padding-top: 75px ;
+  scroll-padding-top: 0px ;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 .body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   font-weight:400;
   overflow-x: hidden;
   position: relative;
@@ -476,11 +484,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 .project-cards-container {
-  display: grid; /* Use grid layout */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Create responsive columns */
-  gap: 20px; /* Space between cards */
-  justify-content: center; /* Center the grid */
+  display: flex; /* Change to flex for easy centering */
+  justify-content: center; /* Horizontally center the cards */
+  align-items: center; /* Vertically center (if necessary) */
+  gap: 20px; /* Optional: space between cards */
+  flex-wrap: wrap; /* Allow wrapping if more than two cards */
+  padding: 20px; /* Optional: padding for spacing */
 }
+
 .project-card {
   max-width: 300px; /* Optional: set a max width */
   box-sizing: border-box; /* Ensure padding doesn't add to card width */
@@ -496,33 +507,48 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* ProjectDetails.css */
 .project-details-container {
   margin-top: 0;
-  padding: 700px 0 100px 0;
-  background-image: url('./assets/img/space.jpg');
-  background-position: top center;
+  padding: 20px;
+  background-image: url('./assets/img/space.jpg'); /* Replace with your path */
+  background-position: center;
   background-size: cover;
   position: relative;
-}
-.project-title-description{
-  position: relative; /* Position relative to the container */
-  top: -400px; /* Move it upwards */
-  transform: translateY(-50px); /* Additional raising */
-  padding-top: 0; /* Ensure no additional padding */
-  
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
-.project-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
+.project-title-description,
+.project-video {
+  flex: 1;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
+  color: #fff; /* White text for contrast */
+}
+
+.project-title-description h1 {
+  font-size: 2em;
   margin-bottom: 10px;
-  text-align: center;
 }
 
-.project-description {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #555;
+.project-title-description p {
+  font-size: 1.2em;
+  line-height: 1.5;
 }
+
+.project-video img,
+.project-video iframe {
+  width: 100%;
+  height: 350px; /* Standardized height for video/image */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for video/image */
+}
+
 
 /* Project Card*/
 .link {

@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 
-
+import { useRef } from 'react';
 import {Container, Row, Col} from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -28,9 +28,10 @@ export const Skills = () =>{
           items: 1
         }
     };
+    const skillsRef = useRef(null);
     
     return (
-        <section className ="skill" id="skill">
+        <section className ="skill" id="skill" href={skillsRef}>
             <Container>
                 <Row>
                     <Col>

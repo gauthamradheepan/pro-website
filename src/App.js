@@ -7,6 +7,7 @@ import { Skills } from "./components/Skills.js";
 import { Project } from "./components/Project.js";
 import { Contact } from "./components/Contact.js";
 import {Certifications} from "./components/Certifications.js";
+import EndCard from "./components/EndCard";
 import AppRoutes from "./AppRoutes";
 import ProjectDetails from "./components/ProjectDetails";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -16,9 +17,9 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <NavBar />
-        <AppRoutes />
         
+        <AppRoutes />
+        <EndCard />
       </div>
     </Router>
   );
